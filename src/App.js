@@ -1,8 +1,10 @@
 import React, { useState } from 'react';
 import Filtro from './components/Filtro';
 import getPageFromFilters from './components/getPageFromFilters';
-import { AiOutlineArrowDown, AiOutlineArrowUp } from 'react-icons/ai'; // Importe o ícone de seta para baixo
-import options1 from './components/options1';
+import { AiOutlineArrowDown, AiOutlineArrowUp } from 'react-icons/ai';
+import optionsAge from './components/optionsAge';
+import optionsView from './components/optionsView';
+import optionsDaltonism from './components/optionsDaltonism';
 import optionsPage from './components/optionsPage';
 import './App.css';
 
@@ -10,7 +12,7 @@ const App = () => {
   const [filtro1, setFiltro1] = useState('');
   const [filtro2, setFiltro2] = useState('');
   const [filtro3, setFiltro3] = useState('');
-  const [filtro4, setFiltro4] = useState('');
+  const [filtro4, setFiltro4] = useState('login');
   const [filtrosVisiveis, setFiltrosVisiveis] = useState(true);
 
   const handleSelect1Change = (filtro) => {
@@ -42,29 +44,33 @@ const App = () => {
       <div className="filtros-container">
         {filtrosVisiveis && (
           <div className="todos-filtros">
-            <label>Filtro 1</label>
+            <label>Idade:</label>
             <Filtro
-              options={options1}
+              options={optionsAge}
               selectedValue={filtro1}
               onSelectChange={handleSelect1Change}
+              selectedDefault={0}
             />
-            <label>Filtro 2</label>
+            <label>Problema de visão:</label>
             <Filtro
-              options={options1}
+              options={optionsView}
               selectedValue={filtro2}
               onSelectChange={handleSelect2Change}
+              selectedDefault={0}
             />
-            <label>Filtro 3</label>
+            <label>Daltonismo:</label>
             <Filtro
-              options={options1}
+              options={optionsDaltonism}
               selectedValue={filtro3}
               onSelectChange={handleSelect3Change}
+              selectedDefault={0}
             />
             <label>Tela Exibida</label>
             <Filtro
               options={optionsPage}
               selectedValue={filtro4}
               onSelectChange={handleSelect4Change}
+              selectedDefault={1}
             />
             <button className="toggle-filtros-btn" onClick={handleToggleFiltros}>
               <AiOutlineArrowUp />

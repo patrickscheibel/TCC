@@ -1,6 +1,6 @@
 import React, { useState, useEffect } from 'react';
 
-const Filtro = ({ options, onSelectChange, selectedValue }) => {
+const Filtro = ({ options, onSelectChange, selectedValue, selectedDefault }) => {
   const [filtroSelecionado, setFiltroSelecionado] = useState(selectedValue);
 
   useEffect(() => {
@@ -17,7 +17,11 @@ const Filtro = ({ options, onSelectChange, selectedValue }) => {
     <div className="filtro-container">
       <div>
         <select value={filtroSelecionado} onChange={handleSelectChange}>
-          <option value="" disabled selected>Selecione</option>
+          {selectedDefault === 0 ? (
+            <option value="" disabled>
+              Selecione
+            </option>
+          ) : ''}
           {options.map((option) => (
             <option key={option.value} value={option.value}>
               {option.label}

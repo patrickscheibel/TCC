@@ -1,7 +1,7 @@
-const filtroOptions = [
+const filtroPage = [
   { value: 'login', label: 'Login' },
   { value: 'dashboard', label: 'Dashboard' },
 ];
 
-export default filtroOptions;
+export default filtroPage;
   
