@@ -1,0 +1,59 @@
+/* App.css */
+
+/* Estilização para os filtros */
+.todos-filtros {
+  background-color: #f0f0f0;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  padding: 10px;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  margin-bottom: 20px;
+}
+
+.filtro-container {
+  flex-grow: 1;
+}
+
+/* Estilização para o seletor */
+select {
+  width: 100%;
+  padding: 8px;
+  border: none;
+  border-radius: 3px;
+  background-color: #ffffff;
+  box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.1);
+  font-size: 14px;
+  outline: none;
+}
+
+/* Estilização para o botão de ocultar/mostrar filtros */
+.toggle-filtros-btn {
+  background-color: #007bff;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  padding: 9px 16px; /* Ajuste o padding vertical para corresponder à altura dos selects */
+  cursor: pointer;
+  transition: background-color 0.2s;
+}
+
+/* Estilização para o botão flutuante */
+.mostrar-filtro-btn {
+  position: absolute;
+  bottom: 20px;
+  left: 20px;
+  background-color: #007bff;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  padding: 8px 16px;
+  cursor: pointer;
+  transition: background-color 0.2s;
+}
+
+.toggle-filtros-btn:hover,
+.mostrar-filtro-btn:hover {
+  background-color: #0056b3;
+}
