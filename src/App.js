@@ -1,15 +1,16 @@
 import React, { useState } from 'react';
 import Filtro from './components/Filtro';
-import Pagina1 from './pages/Pagina1';
-import Pagina2 from './pages/Pagina2';
-import Pagina3 from './pages/Pagina3';
-import options1 from './components/options1.js';
+import getPageFromFilters from './components/getPageFromFilters';
+import { AiOutlineArrowDown, AiOutlineArrowUp } from 'react-icons/ai'; // Importe o ícone de seta para baixo
+import options1 from './components/options1';
+import optionsPage from './components/optionsPage';
 import './App.css';
 
 const App = () => {
   const [filtro1, setFiltro1] = useState('');
   const [filtro2, setFiltro2] = useState('');
   const [filtro3, setFiltro3] = useState('');
+  const [filtro4, setFiltro4] = useState('');
   const [filtrosVisiveis, setFiltrosVisiveis] = useState(true);
 
   const handleSelect1Change = (filtro) => {
@@ -24,20 +25,16 @@ const App = () => {
     setFiltro3(filtro);
   };
 
+  const handleSelect4Change = (filtro) => {
+    setFiltro4(filtro);
+  };
+
   const handleToggleFiltros = () => {
     setFiltrosVisiveis((prevFiltrosVisiveis) => !prevFiltrosVisiveis);
   };
 
   const renderPagina = () => {
-    if(filtro1 === 'pagina1' && filtro2 === 'pagina2' && filtro3 === 'pagina3') {
-      return <Pagina1 />;
-    }
-    // if(filtro2 === 'pagina2') {
-    //   return <Pagina2 />;
-    // }
-    // if(filtro3 === 'pagina3') {
-    //   return <Pagina3 />;
-    // }
+    return getPageFromFilters(filtro1, filtro2, filtro3, filtro4);
   }
 
   return (
@@ -45,27 +42,38 @@ const App = () => {
       <div className="filtros-container">
         {filtrosVisiveis && (
           <div className="todos-filtros">
+            <label>Filtro 1</label>
             <Filtro
               options={options1}
               selectedValue={filtro1}
               onSelectChange={handleSelect1Change}
             />
+            <label>Filtro 2</label>
             <Filtro
               options={options1}
               selectedValue={filtro2}
               onSelectChange={handleSelect2Change}
             />
+            <label>Filtro 3</label>
             <Filtro
               options={options1}
-              selectedValue={filtro3} // Passar o valor selecionado
+              selectedValue={filtro3}
               onSelectChange={handleSelect3Change}
             />
-            <button className="toggle-filtros-btn" onClick={handleToggleFiltros}>Ocultar Filtro</button>
+            <label>Tela Exibida</label>
+            <Filtro
+              options={optionsPage}
+              selectedValue={filtro4}
+              onSelectChange={handleSelect4Change}
+            />
+            <button className="toggle-filtros-btn" onClick={handleToggleFiltros}>
+              <AiOutlineArrowUp />
+            </button>
           </div>
         )}
         {!filtrosVisiveis && (
         <button className="mostrar-filtro-btn" onClick={handleToggleFiltros}>
-          Mostrar Filtro
+           <AiOutlineArrowDown /> {/* Ícone de seta para baixo */}
         </button>
       )}
       </div>

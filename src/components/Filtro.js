@@ -17,7 +17,7 @@ const Filtro = ({ options, onSelectChange, selectedValue }) => {
     <div className="filtro-container">
       <div>
         <select value={filtroSelecionado} onChange={handleSelectChange}>
-          <option value="">Selecione um filtro...</option>
+          <option value="" disabled selected>Selecione</option>
           {options.map((option) => (
             <option key={option.value} value={option.value}>
               {option.label}

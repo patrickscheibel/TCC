@@ -3,13 +3,16 @@
 /* Estilização para os filtros */
 .todos-filtros {
   background-color: #f0f0f0;
-  border: 1px solid #ccc;
   border-radius: 5px;
   padding: 10px;
   display: flex;
   align-items: center;
   gap: 10px;
   margin-bottom: 20px;
+}
+
+.conteudo-principal {
+  border-top: 1px solid #ccc;
 }
 
 .filtro-container {
@@ -30,7 +33,7 @@ select {
 
 /* Estilização para o botão de ocultar/mostrar filtros */
 .toggle-filtros-btn {
-  background-color: #007bff;
+  background-color: #3f4041;
   color: white;
   border: none;
   border-radius: 5px;
@@ -41,16 +44,21 @@ select {
 
 /* Estilização para o botão flutuante */
 .mostrar-filtro-btn {
-  position: absolute;
-  bottom: 20px;
-  left: 20px;
-  background-color: #007bff;
+  background-color: #3f4041;
   color: white;
   border: none;
   border-radius: 5px;
-  padding: 8px 16px;
+  padding: 9px 16px;
   cursor: pointer;
   transition: background-color 0.2s;
+  position: absolute;
+}
+
+.mostrar-filtro-btn {
+  top: 2.8%;
+  right: 10px;
+  transform: translate(0, -50%);
+  z-index: 1;
 }
 
 .toggle-filtros-btn:hover,
