@@ -1,6 +1,7 @@
 const filtroPage = [
-  { value: 'login', label: 'Login' },
   { value: 'dashboard', label: 'Dashboard' },
+  { value: 'login', label: 'Login' },
+  { value: 'register', label: 'Cadastro' },
 ];
 
 export default filtroPage;

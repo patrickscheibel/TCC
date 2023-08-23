@@ -6,7 +6,7 @@ const Login = () => {
     <body>
         <div class="background"></div>
         <div class="login-container">
-            <h1>Login 2</h1>
+            <h1>Login</h1>
             <form>
                 <div class="input-container">
                     <label for="username">Username</label>

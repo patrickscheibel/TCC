@@ -1,33 +1,40 @@
 import React from 'react';
-import Pagina1_Dashboard from '../pages/Pagina1/Dashboard.js';
-import Pagina1_Login from '../pages/Pagina1/Login.js';
-import Pagina2_Dashboard from '../pages/Pagina2/Dashboard.js';
-import Pagina2_Login from '../pages/Pagina2/Login.js';
-import Pagina3_Dashboard from '../pages/Pagina3/Dashboard.js';
-import Pagina3_Login from '../pages/Pagina3/Login.js';
+import Normal_Dashboard from '../pages/Normal/Dashboard.js';
+import Normal_Login from '../pages/Normal/Login.js';
+import Normal_Register from '../pages/Normal/Register.js';
+import DaltonismoProtanopia_Dashboard from '../pages/DaltonismoProtanopia/Dashboard.js';
+import DaltonismoProtanopia_Login from '../pages/DaltonismoProtanopia/Login.js';
+import DaltonismoProtanopia_Register from '../pages/DaltonismoProtanopia/Register.js';
+
 
 const getPageFromFilters = (filtro1, filtro2, filtro3, filtro4) => {
   let paginaComponent = null;
 
-  if (filtro1 === 'idade_01_10' && filtro2 === 'grau_1' && filtro3 === 'normal') {
+  if (filtro1 === 'idade_10_20' && filtro2 === 'grau_2' && filtro3 === 'protanopia') {
     if (filtro4 === 'dashboard') {
-      paginaComponent = <Pagina1_Dashboard />;
+      paginaComponent = <Normal_Dashboard />;
     } else if (filtro4 === 'login') {
-      paginaComponent = <Pagina1_Login />;
+      paginaComponent = <Normal_Login />;
+    } else if (filtro4 === 'register') {
+      paginaComponent = <Normal_Register />;
     }
-  } else if (filtro1 === 'idade_10_20' && filtro2 === 'grau_2' && filtro3 === 'protanopia') {
+  } else if (filtro3 === 'protanopia') {
     if (filtro4 === 'dashboard') {
-      paginaComponent = <Pagina2_Dashboard />;
+      paginaComponent = <DaltonismoProtanopia_Dashboard />;
     } else if (filtro4 === 'login') {
-      paginaComponent = <Pagina2_Login />;
+      paginaComponent = <DaltonismoProtanopia_Login />;
+    } else if (filtro4 === 'register') {
+      paginaComponent = <DaltonismoProtanopia_Register />;
     }
-  } else if (filtro1 === 'idade_20_30' && filtro2 === 'grau_3' && filtro3 === 'tritanopia') {
+  } else if (filtro3 === 'normal') {
     if (filtro4 === 'dashboard') {
-      paginaComponent = <Pagina3_Dashboard />;
+      paginaComponent = <Normal_Dashboard />;
     } else if (filtro4 === 'login') {
-      paginaComponent = <Pagina3_Login />;
+      paginaComponent = <Normal_Login />;
+    } else if (filtro4 === 'register') {
+      paginaComponent = <Normal_Register />;
     }
-  }
+  } 
 
   if (paginaComponent) {
     return paginaComponent;

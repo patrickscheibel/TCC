@@ -11,7 +11,7 @@ import './App.css';
 const App = () => {
   const [filtro1, setFiltro1] = useState('');
   const [filtro2, setFiltro2] = useState('');
-  const [filtro3, setFiltro3] = useState('');
+  const [filtro3, setFiltro3] = useState('normal');
   const [filtro4, setFiltro4] = useState('login');
   const [filtrosVisiveis, setFiltrosVisiveis] = useState(true);
 

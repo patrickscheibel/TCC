@@ -6,18 +6,18 @@ body, h1, h2, h3, ul, li, p, table {
 
 body {
     font-family: Arial, sans-serif;
-    background-color: #f0f0f0;
+    background-color: #f9f9f9; /* Background mais claro */
 }
 
 .header {
-    background-color: #333;
+    background-color: #4e3ceb; /* Cor laranja vívida */
     color: white;
     text-align: center;
     padding: 1rem;
 }
 
 .sidebar {
-    background-color: #444;
+    background-color: #2196f3; /* Cor azul brilhante */
     color: white;
     width: 250px;
     height: 100vh;
@@ -43,11 +43,11 @@ body {
 }
 
 .sidebar a:hover {
-    background-color: #555;
+    background-color: #64b5f6; /* Cor azul claro ao passar o mouse */
 }
 
 .sidebar .active {
-    background-color: #555;
+    background-color: #64b5f6; /* Cor azul claro para o item ativo */
 }
 
 .main-content {
@@ -63,7 +63,7 @@ body {
 }
 
 .overview-card {
-    background-color: white;
+    background-color: #ffffff; /* Fundo branco */
     padding: 1rem;
     box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
     border-radius: 5px;
@@ -71,7 +71,7 @@ body {
 }
 
 .sales-chart {
-    background-color: white;
+    background-color: #ffffff; /* Fundo branco */
     padding: 1rem;
     box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
     border-radius: 5px;
@@ -90,7 +90,7 @@ body {
 }
 
 .sales-table th {
-    background-color: #f0f0f0;
+    background-color: #f9f9f9; /* Cor mais clara para cabeçalhos de tabela */
 }
 
 .product-list {
@@ -100,7 +100,7 @@ body {
 }
 
 .product {
-    background-color: white;
+    background-color: #ffffff; /* Fundo branco */
     padding: 1rem;
     box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
     border-radius: 5px;
@@ -114,7 +114,7 @@ body {
 }
 
 .customer {
-    background-color: white;
+    background-color: #ffffff; /* Fundo branco */
     padding: 1rem;
     box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
     border-radius: 5px;
@@ -123,5 +123,5 @@ body {
 
 .price {
     font-weight: bold;
-    color: #007bff;
+    color: #e91e63; /* Cor rosa vívida */
 }

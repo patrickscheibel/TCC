@@ -5,7 +5,7 @@ const Dashboard = () => {
   return (
     <body>
         <header class="header">
-            <h1>Dashboard de Vendas 2</h1>
+            <h1>Dashboard de Vendas</h1>
         </header>
         <nav class="sidebar">
             <ul>
