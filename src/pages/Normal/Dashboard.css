@@ -1,23 +1,17 @@
-/* Reset de estilos */
-body, h1, h2, h3, ul, li, p, table {
+h1.dashboard-normal, h2.dashboard-normal, h3.dashboard-normal, ul.dashboard-normal, li.dashboard-normal, p.dashboard-normal, table.dashboard-normal {
     margin: 0;
     padding: 0;
 }
 
-body {
-    font-family: Arial, sans-serif;
-    background-color: #f9f9f9; /* Background mais claro */
-}
-
-.header {
-    background-color: #4e3ceb; /* Cor laranja vívida */
+.header.dashboard-normal {
+    background-color: #060131;
     color: white;
     text-align: center;
     padding: 1rem;
 }
 
-.sidebar {
-    background-color: #2196f3; /* Cor azul brilhante */
+.sidebar.dashboard-normal {
+    background-color: #053b68;
     color: white;
     width: 250px;
     height: 100vh;
@@ -25,16 +19,16 @@ body {
     position: fixed;
 }
 
-.sidebar ul {
+.sidebar.dashboard-normal ul {
     list-style: none;
     padding-left: 0;
 }
 
-.sidebar li {
+.sidebar.dashboard-normal li {
     margin-bottom: 1rem;
 }
 
-.sidebar a {
+.sidebar.dashboard-normal a {
     text-decoration: none;
     color: white;
     display: block;
@@ -42,86 +36,94 @@ body {
     transition: background-color 0.3s;
 }
 
-.sidebar a:hover {
-    background-color: #64b5f6; /* Cor azul claro ao passar o mouse */
+.sidebar.dashboard-normal a:hover {
+    background-color: #646f77;
 }
 
-.sidebar .active {
-    background-color: #64b5f6; /* Cor azul claro para o item ativo */
+.sidebar.dashboard-normal .active {
+    background-color: #646f77;
 }
 
-.main-content {
-    margin-left: 270px; /* Ajuste para acomodar a largura da barra lateral */
+.main-content.dashboard-normal {
+    margin-left: 270px;
     padding: 2rem;
 }
 
-.overview {
+.overview.dashboard-normal {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
     gap: 1rem;
     margin-bottom: 2rem;
 }
 
-.overview-card {
-    background-color: #ffffff; /* Fundo branco */
+.overview-card.dashboard-normal {
+    background-color: #ffffff;
     padding: 1rem;
     box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
     border-radius: 5px;
     text-align: center;
 }
 
-.sales-chart {
-    background-color: #ffffff; /* Fundo branco */
+.sales-chart.dashboard-normal {
+    background-color: #ffffff;
     padding: 1rem;
     box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
     border-radius: 5px;
     margin-bottom: 2rem;
 }
 
-.sales-table table {
+.sales-table.dashboard-normal table {
     width: 100%;
     border-collapse: collapse;
 }
 
-.sales-table th, .sales-table td {
+.sales-table.dashboard-normal th, .sales-table.dashboard-normal td {
     padding: 0.5rem;
     text-align: left;
     border-bottom: 1px solid #ddd;
 }
 
-.sales-table th {
-    background-color: #f9f9f9; /* Cor mais clara para cabeçalhos de tabela */
+.sales-table.dashboard-normal th {
+    background-color: #f9f9f9;
 }
 
-.product-list {
+.product-list.dashboard-normal {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
     gap: 1rem;
 }
 
-.product {
-    background-color: #ffffff; /* Fundo branco */
+.product.dashboard-normal {
+    background-color: #ffffff;
     padding: 1rem;
     box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
     border-radius: 5px;
     text-align: center;
 }
 
-.customer-list {
+.customer-list.dashboard-normal {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
     gap: 1rem;
 }
 
-.customer {
-    background-color: #ffffff; /* Fundo branco */
+.customer.dashboard-normal {
+    background-color: #ffffff;
     padding: 1rem;
     box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
     border-radius: 5px;
     text-align: center;
 }
 
-.price {
+.settings-options.dashboard-normal {
+    background-color: #ffffff;
+    padding: 1rem;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    border-radius: 5px;
+    text-align: center;
+}
+
+.price.dashboard-normal {
     font-weight: bold;
-    color: #e91e63; /* Cor rosa vívida */
+    color: #e91e63;
 }
