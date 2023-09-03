@@ -1,4 +1,5 @@
 const optionsAge = [
+  { value: 'todas', label: 'Todas' },
   { value: 'idade_01_10', label: '1-10' },
   { value: 'idade_10_20', label: '10-20' },
   { value: 'idade_20_30', label: '20-30' },
