@@ -8,6 +8,6 @@ const optionsAge = [
   { value: 'idade_50_60', label: '50-60' },
   { value: 'idade_60_70', label: '60-70' },
   { value: 'idade_70_80', label: '70-80' },
-];
+]
 
-export default optionsAge;
+export default optionsAge

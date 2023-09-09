@@ -1,50 +1,50 @@
-import React, { useState } from 'react';
-import Filtro from './components/Filtro';
-import getPageFromFilters from './components/getPageFromFilters';
-import { AiOutlineArrowDown, AiOutlineArrowUp, AiOutlineReload } from 'react-icons/ai';
-import optionsAge from './components/optionsAge';
-import optionsView from './components/optionsView';
-import optionsDaltonism from './components/optionsDaltonism';
-import optionsPage from './components/optionsPage';
-import './App.css';
+import React, { useState } from 'react'
+import Filtro from './components/Filtro'
+import getPageFromFilters from './components/getPageFromFilters'
+import { AiOutlineArrowDown, AiOutlineArrowUp, AiOutlineReload } from 'react-icons/ai'
+import optionsAge from './components/optionsAge'
+import optionsView from './components/optionsView'
+import optionsDaltonism from './components/optionsDaltonism'
+import optionsPage from './components/optionsPage'
+import './App.css'
 
 const App = () => {
-  const [filtro1, setFiltro1] = useState('todas');
-  const [filtro2, setFiltro2] = useState('nenhum');
-  const [filtro3, setFiltro3] = useState('normal');
-  const [filtro4, setFiltro4] = useState('dashboard');
-  const [filtrosVisiveis, setFiltrosVisiveis] = useState(true);
+  const [filtro1, setFiltro1] = useState('todas')
+  const [filtro2, setFiltro2] = useState('nenhum')
+  const [filtro3, setFiltro3] = useState('normal')
+  const [filtro4, setFiltro4] = useState('dashboard')
+  const [filtrosVisiveis, setFiltrosVisiveis] = useState(true)
 
   const handleSelect1Change = (filtro) => {
-    setFiltro1(filtro);
-  };
+    setFiltro1(filtro)
+  }
 
   const handleSelect2Change = (filtro) => {
-    setFiltro2(filtro);
-  };
+    setFiltro2(filtro)
+  }
 
   const handleSelect3Change = (filtro) => {
-    setFiltro3(filtro);
-  };
+    setFiltro3(filtro)
+  }
 
   const handleSelect4Change = (filtro) => {
-    setFiltro4(filtro);
-  };
+    setFiltro4(filtro)
+  }
 
   const handleToggleFiltros = () => {
-    setFiltrosVisiveis((prevFiltrosVisiveis) => !prevFiltrosVisiveis);
-  };
+    setFiltrosVisiveis((prevFiltrosVisiveis) => !prevFiltrosVisiveis)
+  }
 
   const renderPagina = () => {
-    return getPageFromFilters(filtro1, filtro2, filtro3, filtro4);
+    return getPageFromFilters(filtro1, filtro2, filtro3, filtro4)
   }
 
   const handleResetClick = () => {
-    handleSelect1Change('todas');
-    handleSelect2Change('nenhum');
-    handleSelect3Change('normal');
-    handleSelect4Change('dashboard');
-  };
+    handleSelect1Change('todas')
+    handleSelect2Change('nenhum')
+    handleSelect3Change('normal')
+    handleSelect4Change('dashboard')
+  }
 
   return (
     <form>
@@ -97,7 +97,7 @@ const App = () => {
       </div>
       <div className="conteudo-principal">{renderPagina()}</div>
     </form>
-  );
-};
+  )
+}
 
-export default App;
+export default App

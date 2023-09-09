@@ -1,0 +1,140 @@
+/* .background-login {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(to bottom, #ffffff, #ffffff);
+  z-index: -1;
+} */
+
+.login {
+  background-color: rgba(255, 255, 255, 0.9);
+  width: 400px;
+  margin: 100px auto;
+  padding: 40px;
+  border-radius: 10px;
+  text-align: center;
+  box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.2);
+}
+
+.login h1 {
+  margin-bottom: 20px;
+  color: #333333;
+}
+
+.input-login {
+  text-align: left;
+  margin-bottom: 20px;
+}
+
+.input-login label {
+  display: block;
+  font-size: 14px;
+  color: #333333;
+  margin-bottom: 5px;
+}
+
+.input-login input {
+  width: 100%;
+  padding: 10px;
+  border: 1px solid #dddddd;
+  border-radius: 5px;
+}
+
+.button-login button[type="submit"] {
+  background-color: #28a745;
+  color: #ffffff;
+  border: none;
+  padding: 10px 20px;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+  margin-top: 10px;
+}
+
+.button-login button[type="submit"]:hover {
+  background-color: #218838;
+}
+
+.cadastro-button-login {
+  background-color: #007bff;
+  color: #ffffff;
+  border: none;
+  padding: 10px 20px;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+  margin-top: 10px;
+}
+
+.cadastro-button-login:hover {
+  background-color: #0056b3;
+}
+
+/* 
+ * DaltonismoProtaniopia 
+ */
+.login-daltonismo-protanopia {
+  background-color: rgba(255, 255, 255, 0.9);
+  width: 400px;
+  margin: 100px auto;
+  padding: 40px;
+  border-radius: 10px;
+  text-align: center;
+  box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.2);
+}
+
+.login-daltonismo-protanopia h1 {
+  margin-bottom: 20px;
+  color: #333333;
+}
+
+.input-login-daltonismo-protanopia {
+  text-align: left;
+  margin-bottom: 20px;
+}
+
+.input-login-daltonismo-protanopia label {
+  display: block;
+  font-size: 14px;
+  color: #333333;
+  margin-bottom: 5px;
+}
+
+.input-login-daltonismo-protanopia input {
+  width: 100%;
+  padding: 10px;
+  border: 1px solid #dddddd;
+  border-radius: 5px;
+}
+
+.button-login-daltonismo-protanopia button[type="submit"] {
+  background-color: #5f6872;
+  color: #ffffff;
+  border: none;
+  padding: 10px 20px;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+  margin-top: 10px;
+}
+
+.button-login-daltonismo-protanopia button[type="submit"]:hover {
+  background-color: #3b3c3d;
+}
+
+.cadastro-button-login-daltonismo-protanopia {
+  background-color: #05182c;
+  color: #ffffff;
+  border: none;
+  padding: 10px 20px;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+  margin-top: 10px;
+}
+
+.cadastro-button-login-daltonismo-protanopia:hover {
+  background-color: #031931;
+}

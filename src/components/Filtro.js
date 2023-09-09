@@ -1,17 +1,17 @@
-import React, { useState, useEffect } from 'react';
+import React, { useState, useEffect } from 'react'
 
 const Filtro = ({ options, onSelectChange, selectedValue, selectedDefault }) => {
-  const [filtroSelecionado, setFiltroSelecionado] = useState(selectedValue);
+  const [filtroSelecionado, setFiltroSelecionado] = useState(selectedValue)
 
   useEffect(() => {
-    setFiltroSelecionado(selectedValue);
-  }, [selectedValue]);
+    setFiltroSelecionado(selectedValue)
+  }, [selectedValue])
 
   const handleSelectChange = (event) => {
-    const value = event.target.value;
-    setFiltroSelecionado(value);
-    onSelectChange(value);
-  };
+    const value = event.target.value
+    setFiltroSelecionado(value)
+    onSelectChange(value)
+  }
 
   return (
     <div className="filtro-container">
@@ -30,7 +30,7 @@ const Filtro = ({ options, onSelectChange, selectedValue, selectedDefault }) => 
         </select>
       </div>
     </div>
-  );
-};
+  )
+}
 
-export default Filtro;
+export default Filtro

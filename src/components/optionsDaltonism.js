@@ -3,6 +3,6 @@ const optionsDaltonism = [
     { value: 'protanopia', label: 'Protanopia' },
     { value: 'tritanopia', label: 'Tritanopia' },
     { value: 'deuteranopia', label: 'Deuteranopia' },
-  ];
+  ]
   
-export default optionsDaltonism;
+export default optionsDaltonism
