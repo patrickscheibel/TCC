@@ -73,7 +73,7 @@
 }
 
 /* 
- * DaltonismoProtaniopia 
+ * Daltonismo-Protanopia 
  */
 .background-register-daltonismo-protanopia {
   position: fixed;
@@ -120,7 +120,7 @@
 }
 
 .button-register-daltonismo-protanopia button[type="submit"] {
-  background-color: #5f6872;
+  background-color: #72972d;
   color: #ffffff;
   border: none;
   padding: 10px 20px;
@@ -131,11 +131,11 @@
 }
 
 .button-register-daltonismo-protanopia button[type="submit"]:hover {
-  background-color: #5f688088;
+  background-color: #648528;
 }
 
 .voltar-register-daltonismo-protanopia {
-  background-color: #060b11;
+  background-color: #4764e7;
   color: #ffffff;
   border: none;
   padding: 10px 20px;
@@ -146,5 +146,159 @@
 }
 
 .voltar-register-daltonismo-protanopia:hover {
-  background-color: #091c31;
+  background-color: #3f59cc;
+}
+
+/* 
+ * Daltonismo-Tritanopia 
+ */
+ .background-register-daltonismo-tritanopia {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(to bottom, #ffffff, #ffffff);
+  z-index: -1;
+}
+
+.register-daltonismo-tritanopia {
+  background-color: rgba(255, 255, 255, 0.9);
+  width: 400px;
+  margin: 100px auto;
+  padding: 40px;
+  border-radius: 10px;
+  text-align: center;
+  box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.2);
+}
+
+.register-daltonismo-tritanopia h1 {
+  margin-bottom: 20px;
+  color: #333333;
+}
+
+.input-register-daltonismo-tritanopia {
+  text-align: left;
+  margin-bottom: 20px;
+}
+
+.input-register-daltonismo-tritanopia label {
+  display: block;
+  font-size: 14px;
+  color: #333333;
+  margin-bottom: 5px;
+}
+
+.input-register-daltonismo-tritanopia input {
+  width: 100%;
+  padding: 10px;
+  border: 1px solid #dddddd;
+  border-radius: 5px;
+}
+
+.button-register-daltonismo-tritanopia button[type="submit"] {
+  background-color: #5c9fa1;
+  color: #ffffff;
+  border: none;
+  padding: 10px 20px;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+  margin-top: 10px;
+}
+
+.button-register-daltonismo-tritanopia button[type="submit"]:hover {
+  background-color: #4e888a;
+}
+
+.voltar-register-daltonismo-tritanopia {
+  background-color: #2a8550;
+  color: #ffffff;
+  border: none;
+  padding: 10px 20px;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+  margin-top: 10px;
+}
+
+.voltar-register-daltonismo-tritanopia:hover {
+  background-color: #257546;
+}
+
+/* 
+ * Daltonismo-Deuteranopia 
+ */
+ .background-register-daltonismo-deuteranopia {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(to bottom, #ffffff, #ffffff);
+  z-index: -1;
+}
+
+.register-daltonismo-deuteranopia {
+  background-color: rgba(255, 255, 255, 0.9);
+  width: 400px;
+  margin: 100px auto;
+  padding: 40px;
+  border-radius: 10px;
+  text-align: center;
+  box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.2);
+}
+
+.register-daltonismo-deuteranopia h1 {
+  margin-bottom: 20px;
+  color: #333333;
+}
+
+.input-register-daltonismo-deuteranopia {
+  text-align: left;
+  margin-bottom: 20px;
+}
+
+.input-register-daltonismo-deuteranopia label {
+  display: block;
+  font-size: 14px;
+  color: #333333;
+  margin-bottom: 5px;
+}
+
+.input-register-daltonismo-deuteranopia input {
+  width: 100%;
+  padding: 10px;
+  border: 1px solid #dddddd;
+  border-radius: 5px;
+}
+
+.button-register-daltonismo-deuteranopia button[type="submit"] {
+  background-color: #72972d;
+  color: #ffffff;
+  border: none;
+  padding: 10px 20px;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+  margin-top: 10px;
+}
+
+.button-register-daltonismo-deuteranopia button[type="submit"]:hover {
+  background-color: #648528;
+}
+
+.voltar-register-daltonismo-deuteranopia {
+  background-color: #005cbe;
+  color: #ffffff;
+  border: none;
+  padding: 10px 20px;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+  margin-top: 10px;
+}
+
+.voltar-register-daltonismo-deuteranopia:hover {
+  background-color: #0154ad;
 }
