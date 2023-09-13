@@ -52,40 +52,54 @@ const App = () => {
         <div className="filtros-container">
           {filtrosVisiveis && (
             <div className="todos-filtros">
-              <label>Idade:</label>
-              <Filtro
-                options={optionsAge}
-                selectedValue={filtro1}
-                onSelectChange={handleSelect1Change}
-                selectedDefault={0}
-              />
-              <label>Problema de visão:</label>
-              <Filtro
-                options={optionsView}
-                selectedValue={filtro2}
-                onSelectChange={handleSelect2Change}
-                selectedDefault={0}
-              />
-              <label>Daltonismo:</label>
-              <Filtro
-                options={optionsDaltonism}
-                selectedValue={filtro3}
-                onSelectChange={handleSelect3Change}
-                selectedDefault={0}
-              />
-              <label>Tela Exibida</label>
-              <Filtro
-                options={optionsPage}
-                selectedValue={filtro4}
-                onSelectChange={handleSelect4Change}
-                selectedDefault={1}
-              />
-              <button className="toggle-filtros-btn" type='reset' onClick={handleResetClick}>
-                <AiOutlineReload />
-              </button>
-              <button className="toggle-filtros-btn" onClick={handleToggleFiltros}>
-                <AiOutlineArrowUp />
-              </button>
+              <div className="divisao-filtro">
+                <div className="filtro-container">
+                  <label>Idade:</label>
+                  <Filtro
+                    options={optionsAge}
+                    selectedValue={filtro1}
+                    onSelectChange={handleSelect1Change}
+                    selectedDefault={0}
+                  />
+                </div>
+                <div className="filtro-container">
+                  <label>Grau de miopia:</label>
+                  <Filtro
+                    options={optionsView}
+                    selectedValue={filtro2}
+                    onSelectChange={handleSelect2Change}
+                    selectedDefault={0}
+                    />
+                </div>
+              </div>
+              <div className="divisao-filtro">
+                <div className="filtro-container">
+                  <label>Daltonismo:</label>
+                  <Filtro
+                    options={optionsDaltonism}
+                    selectedValue={filtro3}
+                    onSelectChange={handleSelect3Change}
+                    selectedDefault={0}
+                  />
+                </div>
+                <div className="filtro-container">
+                  <label>Tela Exibida</label>
+                  <Filtro
+                    options={optionsPage}
+                    selectedValue={filtro4}
+                    onSelectChange={handleSelect4Change}
+                    selectedDefault={0}
+                  />
+                </div>
+              </div>  
+              <div className="toggle-buttons">
+                <button className="toggle-filtros-btn" type='reset' onClick={handleResetClick}>
+                  <AiOutlineReload />
+                </button>
+                <button className="toggle-filtros-btn" onClick={handleToggleFiltros}>
+                  <AiOutlineArrowUp />
+                </button>
+              </div>
             </div>
           )}
           {!filtrosVisiveis && (

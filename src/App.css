@@ -6,7 +6,50 @@
   display: flex;
   align-items: center;
   gap: 10px;
-  margin-bottom: 20px;
+  /* flex-direction: row; */
+}
+
+.toggle-buttons {
+  display: flex;
+  align-items: center;
+}
+
+/* @media (max-width: 1790px) {
+  .filtro-container {
+    width: 15px;
+    text-align: left;
+  }
+} */
+
+@media (max-width: 1000px) {
+  .todos-filtros {
+    flex-direction: column; /* Alinha os filtros verticalmente */
+    text-align: center; /* Centraliza o texto dos rótulos e selects */
+  }
+
+  .toggle-buttons {
+    flex-direction: row;
+  }
+
+  /* .divisao-filtro {
+    width: 50px;
+  } */
+
+  .filtro-container {
+    width: 135px;
+    text-align: left;
+  }
+
+  .toggle-filtros-btn {
+    margin-top: 5px;
+  }
+}
+
+.divisao-filtro {
+  display: flex;
+  align-items: center; /* Centraliza verticalmente */
+  gap: 10px; /* Espaço entre os filtros */
+  /* width: 850px; */
 }
 
 .conteudo-principal {
@@ -15,6 +58,7 @@
 
 .filtro-container {
   flex-grow: 1;
+  /* width: 417px; */
 }
 
 /* Estilização para o seletor */
@@ -38,6 +82,8 @@ select {
   padding: 9px 16px; /* Ajuste o padding vertical para corresponder à altura dos selects */
   cursor: pointer;
   transition: background-color 0.2s;
+  margin-top: 20px;
+  margin-right: 3px;
 }
 
 /* Estilização para o botão flutuante */

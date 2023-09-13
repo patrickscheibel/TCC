@@ -14,22 +14,18 @@ const Filtro = ({ options, onSelectChange, selectedValue, selectedDefault }) => 
   }
 
   return (
-    <div className="filtro-container">
-      <div>
-        <select value={filtroSelecionado} onChange={handleSelectChange}>
-          {selectedDefault === 0 ? (
-            <option value="" disabled>
-              Selecione
-            </option>
-          ) : ''}
-          {options.map((option) => (
-            <option key={option.value} value={option.value}>
-              {option.label}
-            </option>
-          ))}
-        </select>
-      </div>
-    </div>
+    <select value={filtroSelecionado} onChange={handleSelectChange}>
+      {selectedDefault === 0 ? (
+        <option value="" disabled>
+          Selecione
+        </option>
+      ) : ''}
+      {options.map((option) => (
+        <option key={option.value} value={option.value}>
+          {option.label}
+        </option>
+      ))}
+    </select>
   )
 }
 
