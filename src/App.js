@@ -48,67 +48,63 @@ const App = () => {
 
   return (
     <form>
-      <div className="app-container">
-        <div className="filtros-container">
-          {filtrosVisiveis && (
-            <div className="todos-filtros">
-              <div className="divisao-filtro">
-                <div className="filtro-container">
-                  <label>Idade:</label>
-                  <Filtro
-                    options={optionsAge}
-                    selectedValue={filtro1}
-                    onSelectChange={handleSelect1Change}
-                    selectedDefault={0}
-                  />
-                </div>
-                <div className="filtro-container">
-                  <label>Grau de miopia:</label>
-                  <Filtro
-                    options={optionsView}
-                    selectedValue={filtro2}
-                    onSelectChange={handleSelect2Change}
-                    selectedDefault={0}
-                    />
-                </div>
+        {filtrosVisiveis && (
+          <div className="todos-filtros">
+            <div className="divisao-filtro">
+              <div className="filtro-container">
+                <label>Idade</label>
+                <Filtro
+                  options={optionsAge}
+                  selectedValue={filtro1}
+                  onSelectChange={handleSelect1Change}
+                  selectedDefault={0}
+                />
               </div>
-              <div className="divisao-filtro">
-                <div className="filtro-container">
-                  <label>Daltonismo:</label>
-                  <Filtro
-                    options={optionsDaltonism}
-                    selectedValue={filtro3}
-                    onSelectChange={handleSelect3Change}
-                    selectedDefault={0}
+              <div className="filtro-container">
+                <label>Grau de miopia</label>
+                <Filtro
+                  options={optionsView}
+                  selectedValue={filtro2}
+                  onSelectChange={handleSelect2Change}
+                  selectedDefault={0}
                   />
-                </div>
-                <div className="filtro-container">
-                  <label>Tela Exibida</label>
-                  <Filtro
-                    options={optionsPage}
-                    selectedValue={filtro4}
-                    onSelectChange={handleSelect4Change}
-                    selectedDefault={0}
-                  />
-                </div>
-              </div>  
-              <div className="toggle-buttons">
-                <button className="toggle-filtros-btn" type='reset' onClick={handleResetClick}>
-                  <AiOutlineReload />
-                </button>
-                <button className="toggle-filtros-btn" onClick={handleToggleFiltros}>
-                  <AiOutlineArrowUp />
-                </button>
               </div>
             </div>
-          )}
-          {!filtrosVisiveis && (
-          <button className="mostrar-filtro-btn" onClick={handleToggleFiltros}>
-            <AiOutlineArrowDown />
-          </button>
+            <div className="divisao-filtro">
+              <div className="filtro-container">
+                <label>Daltonismo</label>
+                <Filtro
+                  options={optionsDaltonism}
+                  selectedValue={filtro3}
+                  onSelectChange={handleSelect3Change}
+                  selectedDefault={0}
+                />
+              </div>
+              <div className="filtro-container">
+                <label>Tela Exibida</label>
+                <Filtro
+                  options={optionsPage}
+                  selectedValue={filtro4}
+                  onSelectChange={handleSelect4Change}
+                  selectedDefault={0}
+                />
+              </div>
+            </div>  
+            <div className="toggle-buttons">
+              <button className="toggle-filtros-btn" type='reset' onClick={handleResetClick}>
+                <AiOutlineReload />
+              </button>
+              <button className="toggle-filtros-btn" onClick={handleToggleFiltros}>
+                <AiOutlineArrowUp />
+              </button>
+            </div>
+          </div>
         )}
-        </div>
-      </div>
+        {!filtrosVisiveis && (
+        <button className="mostrar-filtro-btn" onClick={handleToggleFiltros}>
+          <AiOutlineArrowDown />
+        </button>
+        )}
       <div className="conteudo-principal">{renderPagina()}</div>
     </form>
   )
