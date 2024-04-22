@@ -4,19 +4,17 @@ import Normal_Login from '../pages/Login.js'
 import Normal_Register from '../pages/Register.js'
 
 const getPageFromFilters = (filtroIdade, filtroProblemaVisao, filtroDaltonismo, filtroTelaExibida) => {
-  let selectedStyle = '';
-
-  selectedStyle += getSelectedStyleForIdade(filtroIdade)
-  selectedStyle += getSelectedStyleForDaltonismo(filtroDaltonismo)
-  selectedStyle += getSelectedStyleForProblemaVisao(filtroProblemaVisao)
+  let idade = getSelectedStyleForIdade(filtroIdade)
+  let daltonismo = getSelectedStyleForDaltonismo(filtroDaltonismo)
+  let problemaVisao = getSelectedStyleForProblemaVisao(filtroProblemaVisao)
   
   switch (filtroTelaExibida) {
     case 'dashboard':
-      return <Normal_Dashboard selectedStyle={`dashboard${selectedStyle}`} />
+      return <Normal_Dashboard idade={`${idade}`} daltonismo={`${daltonismo}`} problemaVisao={`${problemaVisao}`} />
     case 'login':
-      return <Normal_Login selectedStyle={`login${selectedStyle}`} />
+      return <Normal_Login idade={`${idade}`} daltonismo={`${daltonismo}`} problemaVisao={`${problemaVisao}`} />
     case 'register':
-      return <Normal_Register selectedStyle={`register${selectedStyle}`} />
+      return <Normal_Register idade={`${idade}`} daltonismo={`${daltonismo}`} problemaVisao={`${problemaVisao}`} />
     default:
       return <div>Página não encontrada.</div>
   }
@@ -24,18 +22,18 @@ const getPageFromFilters = (filtroIdade, filtroProblemaVisao, filtroDaltonismo, 
 
 function getSelectedStyleForIdade(filtroIdade) {
   switch (filtroIdade) {
-    case 'idade_01_20':
+    case 'idade_01_10':
     case 'idade_10_20':
-      return '';
+      return 'idade_01_20';
     case 'idade_20_30':
     case 'idade_30_40':
-      return '';
+      return 'idade_20_40';
     case 'idade_40_50':
     case 'idade_50_60':
-      return '';
+      return 'idade_40_60';
     case 'idade_60_70':
     case 'idade_70_80':
-      return '';
+      return 'idade_60_80';
     default:
       return '';
   }
@@ -44,11 +42,11 @@ function getSelectedStyleForIdade(filtroIdade) {
 function getSelectedStyleForDaltonismo(filtroDaltonismo) {
   switch (filtroDaltonismo) {
     case 'protanopia':
-      return '-daltonismo-protanopia';
+      return 'protanopia';
     case 'tritanopia':
-      return '-daltonismo-tritanopia';
+      return 'tritanopia';
     case 'deuteranopia':
-      return '-daltonismo-deuteranopia';
+      return 'deuteranopia';
     default:
       return '';
   }
@@ -57,11 +55,11 @@ function getSelectedStyleForDaltonismo(filtroDaltonismo) {
 function getSelectedStyleForProblemaVisao(filtroProblemaVisao) {
   switch (filtroProblemaVisao) {
     case 'miopia_baixa':
-      return '';
+      return 'miopia_baixa';
     case 'miopia_moderada':
-      return '';
+      return 'miopia_moderada';
     case 'miopia_alta':
-      return '';
+      return 'miopia_alta';
     default:
       return '';
   }
