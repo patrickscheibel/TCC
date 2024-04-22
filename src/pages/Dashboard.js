@@ -3,13 +3,14 @@ import './Dashboard.css'
 
 const Dashboard = (props) => {
     const selectedStyle = props.selectedStyle
+    const daltonismo = props.daltonismo
 
     return (
         <div className={`dashboard ${selectedStyle}`}>
-            <header className={`header dashboard ${selectedStyle}`}>
+            <header className={`header dashboard ${daltonismo}`}>
                 <h1>Dashboard de Vendas</h1>
             </header>
-            <nav className={`sidebar dashboard ${selectedStyle}`}>
+            <nav className={`sidebar dashboard ${daltonismo}`}>
                 <ul>
                     <li><a href="#" className="active">Visão Geral</a></li>
                     <li><a href="#">Vendas</a></li>
@@ -38,16 +39,20 @@ const Dashboard = (props) => {
                     <h2>Produtos</h2>
                     <ul className={`product-list dashboard ${selectedStyle}`}>
                         <div className={`product dashboard ${selectedStyle}`}>
+                            <img className="image" alt="imagem" src={require('./images/produto.png')} />
                             <h4>Produto 1</h4>
                             <p className="price">Preço: R$ 50,00</p>
+                            <h5>Descrição do produto 1</h5>
                             <p>Disponibilidade: Em estoque</p>
                         </div>
                         <div className={`product dashboard ${selectedStyle}`}>
+                            <img className="image" alt="imagem" src={require('./images/produto.png')} />
                             <h4>Produto 2</h4>
                             <p className="price">Preço: R$ 65,00</p>
                             <p>Disponibilidade: Esgotado</p>
                         </div>
                         <div className={`product dashboard ${selectedStyle}`}>
+                            <img className="image" alt="imagem" src={require('./images/produto.png')} />
                             <h4>Produto 3</h4>
                             <p className="price">Preço: R$ 10,00</p>
                             <p>Disponibilidade: Esgotado</p>
@@ -79,33 +84,33 @@ const Dashboard = (props) => {
                         </div>
                     </ul>
                     <br />
-                    {/* <ul className={`customer-list dashboard ${selectedStyle}`}>
-                        <div className={`customer ${selectedStyle}`}>
+                    <ul className={`customer-list dashboard ${selectedStyle}`}>
+                        <div className={`customer dashboard ${selectedStyle}`}>
                             <h4>Cliente 6</h4>
                             <p>Email: cliente6@example.com</p>
                             <p>Total de Compras: 6</p>
                         </div>
-                        <div className={`customer ${selectedStyle}`}>
+                        <div className={`customer dashboard ${selectedStyle}`}>
                             <h4>Cliente 7</h4>
                             <p>Email: cliente7@example.com</p>
                             <p>Total de Compras: 4</p>
                         </div>
-                        <div className={`customer ${selectedStyle}`}>
+                        <div className={`customer dashboard ${selectedStyle}`}>
                             <h4>Cliente 8</h4>
                             <p>Email: cliente8@example.com</p>
                             <p>Total de Compras: 9</p>
                         </div>
-                        <div className={`customer ${selectedStyle}`}>
+                        <div className={`customer dashboard ${selectedStyle}`}>
                             <h4>Cliente 9</h4>
                             <p>Email: cliente9@example.com</p>
                             <p>Total de Compras: 2</p>
                         </div>
-                        <div className={`customer ${selectedStyle}`}>
+                        <div className={`customer dashboard ${selectedStyle}`}>
                             <h4>Cliente 10</h4>
                             <p>Email: cliente10@example.com</p>
                             <p>Total de Compras: 12</p>
                         </div>
-                    </ul> */}
+                    </ul>
                 </section>
             </main>
         </div>

@@ -1,10 +1,19 @@
-h1.dashboard, h2.dashboard, h3.dashboard, ul.dashboard, li.dashboard, p.dashboard, table.dashboard {
+ h1.dashboard, h2.dashboard, h3.dashboard, ul.dashboard, li.dashboard, p.dashboard, table.dashboard {
     margin: 0;
     padding: 0;
+    font-family: Arial, Helvetica, sans-serif;
 }
 
 .header.dashboard {
     background-color: #060131;
+    color: white;
+    text-align: center;
+    padding: 1rem;
+}
+
+/* Teste */
+.header.dashboard.protanopia {
+    background-color: #f50303;
     color: white;
     text-align: center;
     padding: 1rem;
@@ -16,7 +25,17 @@ h1.dashboard, h2.dashboard, h3.dashboard, ul.dashboard, li.dashboard, p.dashboar
     width: 250px;
     height: 100vh;
     padding: 1rem;
-    position: fixed;
+    position: absolute;
+}
+
+/* TESTE */
+.sidebar.dashboard.protanopia{
+    background-color: #f50303;
+    color: white;
+    width: 250px;
+    height: 100vh;
+    padding: 1rem;
+    position: absolute;
 }
 
 .sidebar.dashboard ul {
@@ -64,29 +83,6 @@ h1.dashboard, h2.dashboard, h3.dashboard, ul.dashboard, li.dashboard, p.dashboar
     text-align: center;
 }
 
-.sales-chart.dashboard {
-    background-color: #ffffff;
-    padding: 1rem;
-    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
-    border-radius: 5px;
-    margin-bottom: 2rem;
-}
-
-.sales-table.dashboard table {
-    width: 100%;
-    border-collapse: collapse;
-}
-
-.sales-table.dashboard th, .sales-table.dashboard td {
-    padding: 0.5rem;
-    text-align: left;
-    border-bottom: 1px solid #ddd;
-}
-
-.sales-table.dashboard th {
-    background-color: #f9f9f9;
-}
-
 .product-list.dashboard {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
@@ -115,414 +111,23 @@ h1.dashboard, h2.dashboard, h3.dashboard, ul.dashboard, li.dashboard, p.dashboar
     text-align: center;
 }
 
-.settings-options.dashboard {
-    background-color: #ffffff;
-    padding: 1rem;
-    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
-    border-radius: 5px;
-    text-align: center;
+.price {
+    font-weight: bold;
 }
 
-.price.dashboard {
-    font-weight: bold;
-    color: #e91e63;
+.image {
+    max-width: 100px;
+    height: auto;
 }
 
 /* 
  * DaltonismoProtaniopia 
  */
- h1.dashboard-daltonismo-protanopia, h2.dashboard-daltonismo-protanopia, h3.dashboard-daltonismo-protanopia, ul.dashboard-daltonismo-protanopia, li.dashboard-daltonismo-protanopia, p.dashboard-daltonismo-protanopia, table.dashboard-daltonismo-protanopia {
-    margin: 0;
-    padding: 0;
-}
-
-.header.dashboard-daltonismo-protanopia {
-    background-color: #e60fc2;
-    color: white;
-    text-align: center;
-    padding: 1rem;
-}
-
-.sidebar.dashboard-daltonismo-protanopia {
-    background-color: #460342;
-    color: white;
-    width: 250px;
-    height: 100vh;
-    padding: 1rem;
-    position: fixed;
-}
-
-.sidebar.dashboard-daltonismo-protanopia ul {
-    list-style: none;
-    padding-left: 0;
-}
-
-.sidebar.dashboard-daltonismo-protanopia li {
-    margin-bottom: 1rem;
-}
-
-.sidebar.dashboard-daltonismo-protanopia a {
-    text-decoration: none;
-    color: white;
-    display: block;
-    padding: 0.5rem;
-    transition: background-color 0.3s;
-}
-
-.sidebar.dashboard-daltonismo-protanopia a:hover {
-    background-color: #54405a;
-}
-
-.sidebar.dashboard-daltonismo-protanopia .active {
-    background-color: #53305c;
-}
-
-.main-content.dashboard-daltonismo-protanopia {
-    margin-left: 270px;
-    padding: 2rem;
-}
-
-.overview.dashboard-daltonismo-protanopia {
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
-    gap: 1rem;
-    margin-bottom: 2rem;
-}
-
-.overview-card.dashboard-daltonismo-protanopia {
-    background-color: #ffffff;
-    padding: 1rem;
-    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
-    border-radius: 5px;
-    text-align: center;
-}
-
-.sales-chart.dashboard-daltonismo-protanopia {
-    background-color: #ffffff;
-    padding: 1rem;
-    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
-    border-radius: 5px;
-    margin-bottom: 2rem;
-}
-
-.sales-table.dashboard-daltonismo-protanopia table {
-    width: 100%;
-    border-collapse: collapse;
-}
-
-.sales-table.dashboard-daltonismo-protanopia th, .sales-table.dashboard-daltonismo-protanopia td {
-    padding: 0.5rem;
-    text-align: left;
-    border-bottom: 1px solid #ddd;
-}
-
-.sales-table.dashboard-daltonismo-protanopia th {
-    background-color: #f9f9f9;
-}
-
-.product-list.dashboard-daltonismo-protanopia {
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
-    gap: 1rem;
-}
-
-.product.dashboard-daltonismo-protanopia {
-    background-color: #ffffff;
-    padding: 1rem;
-    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
-    border-radius: 5px;
-    text-align: center;
-}
-
-.customer-list.dashboard-daltonismo-protanopia {
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
-    gap: 1rem;
-}
-
-.customer.dashboard-daltonismo-protanopia {
-    background-color: #ffffff;
-    padding: 1rem;
-    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
-    border-radius: 5px;
-    text-align: center;
-}
-
-.settings-options.dashboard-daltonismo-protanopia {
-    background-color: #ffffff;
-    padding: 1rem;
-    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
-    border-radius: 5px;
-    text-align: center;
-}
-
-.price.dashboard-daltonismo-protanopia {
-    font-weight: bold;
-    color: #e91e63;
-}
 
 /* 
  * Daltonismo-Tritanopia 
  */
- h1.dashboard-daltonismo-tritanopia, h2.dashboard-daltonismo-tritanopia, h3.dashboard-daltonismo-tritanopia, ul.dashboard-daltonismo-tritanopia, li.dashboard-daltonismo-tritanopia, p.dashboard-daltonismo-tritanopia, table.dashboard-daltonismo-tritanopia {
-    margin: 0;
-    padding: 0;
-}
-
-.header.dashboard-daltonismo-tritanopia {
-    background-color: #77e60f;
-    color: white;
-    text-align: center;
-    padding: 1rem;
-}
-
-.sidebar.dashboard-daltonismo-tritanopia {
-    background-color: #035e08;
-    color: white;
-    width: 250px;
-    height: 100vh;
-    padding: 1rem;
-    position: fixed;
-}
-
-.sidebar.dashboard-daltonismo-tritanopia ul {
-    list-style: none;
-    padding-left: 0;
-}
-
-.sidebar.dashboard-daltonismo-tritanopia li {
-    margin-bottom: 1rem;
-}
-
-.sidebar.dashboard-daltonismo-tritanopia a {
-    text-decoration: none;
-    color: white;
-    display: block;
-    padding: 0.5rem;
-    transition: background-color 0.3s;
-}
-
-.sidebar.dashboard-daltonismo-tritanopia a:hover {
-    background-color: #7480c5;
-}
-
-.sidebar.dashboard-daltonismo-tritanopia .active {
-    background-color: #30375c;
-}
-
-.main-content.dashboard-daltonismo-tritanopia {
-    margin-left: 270px;
-    padding: 2rem;
-}
-
-.overview.dashboard-daltonismo-tritanopia {
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
-    gap: 1rem;
-    margin-bottom: 2rem;
-}
-
-.overview-card.dashboard-daltonismo-tritanopia {
-    background-color: #ffffff;
-    padding: 1rem;
-    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
-    border-radius: 5px;
-    text-align: center;
-}
-
-.sales-chart.dashboard-daltonismo-tritanopia {
-    background-color: #ffffff;
-    padding: 1rem;
-    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
-    border-radius: 5px;
-    margin-bottom: 2rem;
-}
-
-.sales-table.dashboard-daltonismo-tritanopia table {
-    width: 100%;
-    border-collapse: collapse;
-}
-
-.sales-table.dashboard-daltonismo-tritanopia th, .sales-table.dashboard-daltonismo-tritanopia td {
-    padding: 0.5rem;
-    text-align: left;
-    border-bottom: 1px solid #ddd;
-}
-
-.sales-table.dashboard-daltonismo-tritanopia th {
-    background-color: #f9f9f9;
-}
-
-.product-list.dashboard-daltonismo-tritanopia {
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
-    gap: 1rem;
-}
-
-.product.dashboard-daltonismo-tritanopia {
-    background-color: #ffffff;
-    padding: 1rem;
-    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
-    border-radius: 5px;
-    text-align: center;
-}
-
-.customer-list.dashboard-daltonismo-tritanopia {
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
-    gap: 1rem;
-}
-
-.customer.dashboard-daltonismo-tritanopia {
-    background-color: #ffffff;
-    padding: 1rem;
-    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
-    border-radius: 5px;
-    text-align: center;
-}
-
-.settings-options.dashboard-daltonismo-tritanopia {
-    background-color: #ffffff;
-    padding: 1rem;
-    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
-    border-radius: 5px;
-    text-align: center;
-}
-
-.price.dashboard-daltonismo-tritanopia {
-    font-weight: bold;
-    color: #1edce9;
-}
-
+ 
 /* 
  * Daltonismo-Deuteranopia 
  */
- h1.dashboard-daltonismo-deuteranopia, h2.dashboard-daltonismo-deuteranopia, h3.dashboard-daltonismo-deuteranopia, ul.dashboard-daltonismo-deuteranopia, li.dashboard-daltonismo-deuteranopia, p.dashboard-daltonismo-deuteranopia, table.dashboard-daltonismo-deuteranopia {
-    margin: 0;
-    padding: 0;
-}
-
-.header.dashboard-daltonismo-deuteranopia {
-    background-color: #e61d0f;
-    color: white;
-    text-align: center;
-    padding: 1rem;
-}
-
-.sidebar.dashboard-daltonismo-deuteranopia {
-    background-color: #5e1803;
-    color: white;
-    width: 250px;
-    height: 100vh;
-    padding: 1rem;
-    position: fixed;
-}
-
-.sidebar.dashboard-daltonismo-deuteranopia ul {
-    list-style: none;
-    padding-left: 0;
-}
-
-.sidebar.dashboard-daltonismo-deuteranopia li {
-    margin-bottom: 1rem;
-}
-
-.sidebar.dashboard-daltonismo-deuteranopia a {
-    text-decoration: none;
-    color: white;
-    display: block;
-    padding: 0.5rem;
-    transition: background-color 0.3s;
-}
-
-.sidebar.dashboard-daltonismo-deuteranopia a:hover {
-    background-color: #59c48e;
-}
-
-.sidebar.dashboard-daltonismo-deuteranopia .active {
-    background-color: #50292c;
-}
-
-.main-content.dashboard-daltonismo-deuteranopia {
-    margin-left: 270px;
-    padding: 2rem;
-}
-
-.overview.dashboard-daltonismo-deuteranopia {
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
-    gap: 1rem;
-    margin-bottom: 2rem;
-}
-
-.overview-card.dashboard-daltonismo-deuteranopia {
-    background-color: #ffffff;
-    padding: 1rem;
-    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
-    border-radius: 5px;
-    text-align: center;
-}
-
-.sales-chart.dashboard-daltonismo-deuteranopia {
-    background-color: #ffffff;
-    padding: 1rem;
-    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
-    border-radius: 5px;
-    margin-bottom: 2rem;
-}
-
-.sales-table.dashboard-daltonismo-deuteranopia table {
-    width: 100%;
-    border-collapse: collapse;
-}
-
-.sales-table.dashboard-daltonismo-deuteranopia th, .sales-table.dashboard-daltonismo-deuteranopia td {
-    padding: 0.5rem;
-    text-align: left;
-    border-bottom: 1px solid #ddd;
-}
-
-.sales-table.dashboard-daltonismo-deuteranopia th {
-    background-color: #f9f9f9;
-}
-
-.product-list.dashboard-daltonismo-deuteranopia {
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
-    gap: 1rem;
-}
-
-.product.dashboard-daltonismo-deuteranopia {
-    background-color: #ffffff;
-    padding: 1rem;
-    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
-    border-radius: 5px;
-    text-align: center;
-}
-
-.customer-list.dashboard-daltonismo-deuteranopia {
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
-    gap: 1rem;
-}
-
-.customer.dashboard-daltonismo-deuteranopia {
-    background-color: #ffffff;
-    padding: 1rem;
-    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
-    border-radius: 5px;
-    text-align: center;
-}
-
-.settings-options.dashboard-daltonismo-deuteranopia {
-    background-color: #ffffff;
-    padding: 1rem;
-    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
-    border-radius: 5px;
-    text-align: center;
-}
-
-.price.dashboard-daltonismo-deuteranopia {
-    font-weight: bold;
-    color: #1e3de9;
-}
