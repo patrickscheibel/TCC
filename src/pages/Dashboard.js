@@ -2,11 +2,14 @@ import React from 'react'
 import './Dashboard.css'
 
 const Dashboard = (props) => {
-    const selectedStyle = props.selectedStyle
     const daltonismo = props.daltonismo
+    const idade = props.idade
+    const problemaVisao = props.problemaVisao
+    const isIdadeValida = idade == 'idade_10_20' || idade == 'idade_20_40' || idade == 'idade_40_60' || idade == ''
+    
 
     return (
-        <div className={`dashboard ${selectedStyle}`}>
+        <div className={`dashboard ${problemaVisao}`}>
             <header className={`header dashboard ${daltonismo}`}>
                 <h1>Dashboard de Vendas</h1>
             </header>
@@ -19,98 +22,101 @@ const Dashboard = (props) => {
                     <li><a href="#">Configurações</a></li>
                 </ul>
             </nav>
-            <main className={`main-content dashboard ${selectedStyle}`}>
-                <section className={`overview dashboard ${selectedStyle}`}>
+            <main className='main-content dashboard'>
+                <section className='overview dashboard'>
                     <h2>Visão Geral</h2>
-                    <div className={`overview-card dashboard ${selectedStyle}`}>
+                    <div className='overview-card dashboard'>
                         <h3>Total de Vendas</h3>
                         <p>R$ 50,000</p>
                     </div>
-                    <div className={`overview-card dashboard ${selectedStyle}`}>
+                    <div className='overview-card dashboard'>
                         <h3>Clientes Ativos</h3>
                         <p>350</p>
                     </div>
-                    <div className={`overview-card dashboard ${selectedStyle}`}>
+                    <div className='overview-card dashboard'>
                         <h3>Produtos Vendidos</h3>
                         <p>1200</p>
                     </div>
                 </section>
-                <section className={`products dashboard ${selectedStyle}`}>
+                <section className='products dashboard'>
                     <h2>Produtos</h2>
-                    <ul className={`product-list dashboard ${selectedStyle}`}>
-                        <div className={`product dashboard ${selectedStyle}`}>
-                            <img className="image" alt="imagem" src={require('./images/produto.png')} />
-                            <h4>Produto 1</h4>
+                    <ul className='product-list dashboard'>
+                        <div className='product dashboard'>
+                            <img className={`image ${isIdadeValida}`} alt="imagem" src={require('./images/produto.png')} />
+                            <h3>Produto 1</h3>
                             <p className="price">Preço: R$ 50,00</p>
-                            <h5>Descrição do produto 1</h5>
+                            { isIdadeValida ? (
+                                <p> Descrição do produto 1 </p>
+                            ) : (
+                                <p></p>
+                            )}
                             <p>Disponibilidade: Em estoque</p>
                         </div>
-                        <div className={`product dashboard ${selectedStyle}`}>
-                            <img className="image" alt="imagem" src={require('./images/produto.png')} />
-                            <h4>Produto 2</h4>
+                        <div className='product dashboard'>
+                            <img className={`image ${isIdadeValida}`} alt="imagem" src={require('./images/produto.png')} />
+                            <h3>Produto 2</h3>
                             <p className="price">Preço: R$ 65,00</p>
+                            { isIdadeValida ? (
+                                <p> Descrição do produto 2 </p>
+                            ) : (
+                                ''
+                            )}
                             <p>Disponibilidade: Esgotado</p>
                         </div>
-                        <div className={`product dashboard ${selectedStyle}`}>
-                            <img className="image" alt="imagem" src={require('./images/produto.png')} />
-                            <h4>Produto 3</h4>
+                        <div className='product dashboard'>
+                            <img className={`image ${isIdadeValida}`} alt="imagem" src={require('./images/produto.png')} />
+                            <h3>Produto 3</h3>
                             <p className="price">Preço: R$ 10,00</p>
+                            { isIdadeValida ? (
+                                <p> Descrição do produto 2 </p>
+                            ) : (
+                                ''
+                            )}
                             <p>Disponibilidade: Esgotado</p>
                         </div>
                     </ul>
                 </section>
-                <section className={`customers dashboard ${selectedStyle}`}>
+                <section className='customers dashboard'>
                     <h2>Clientes</h2>
-                    <ul className={`customer-list dashboard ${selectedStyle}`}>
-                        <div className={`customer dashboard ${selectedStyle}`}>
+                    <ul className='customer-list dashboard'>
+                        <div className='customer dashboard'>
                             <h4>Cliente 1</h4>
                             <p>Email: cliente1@example.com</p>
                             <p>Total de Compras: 5</p>
                         </div>
-                        <div className={`customer dashboard ${selectedStyle}`}>
+                        <div className='customer dashboard'>
                             <h4>Cliente 2</h4>
                             <p>Email: cliente2@example.com</p>
                             <p>Total de Compras: 8</p>
                         </div>
-                        <div className={`customer dashboard ${selectedStyle}`}>
+                        <div className='customer dashboard'>
                             <h4>Cliente 2</h4>
                             <p>Email: cliente2@example.com</p>
                             <p>Total de Compras: 8</p>
                         </div>
-                        <div className={`customer dashboard ${selectedStyle}`}>
+                        <div className='customer dashboard'>
                             <h4>Cliente 2</h4>
                             <p>Email: cliente2@example.com</p>
                             <p>Total de Compras: 8</p>
                         </div>
                     </ul>
                     <br />
-                    <ul className={`customer-list dashboard ${selectedStyle}`}>
-                        <div className={`customer dashboard ${selectedStyle}`}>
-                            <h4>Cliente 6</h4>
-                            <p>Email: cliente6@example.com</p>
-                            <p>Total de Compras: 6</p>
-                        </div>
-                        <div className={`customer dashboard ${selectedStyle}`}>
-                            <h4>Cliente 7</h4>
-                            <p>Email: cliente7@example.com</p>
-                            <p>Total de Compras: 4</p>
-                        </div>
-                        <div className={`customer dashboard ${selectedStyle}`}>
-                            <h4>Cliente 8</h4>
-                            <p>Email: cliente8@example.com</p>
-                            <p>Total de Compras: 9</p>
-                        </div>
-                        <div className={`customer dashboard ${selectedStyle}`}>
-                            <h4>Cliente 9</h4>
-                            <p>Email: cliente9@example.com</p>
-                            <p>Total de Compras: 2</p>
-                        </div>
-                        <div className={`customer dashboard ${selectedStyle}`}>
-                            <h4>Cliente 10</h4>
-                            <p>Email: cliente10@example.com</p>
-                            <p>Total de Compras: 12</p>
-                        </div>
-                    </ul>
+                    { isIdadeValida ? (
+                        <ul className='customer-list dashboard'>
+                            <div className='customer dashboard'>
+                                <h4>Cliente 6</h4>
+                                <p>Email: cliente6@example.com</p>
+                                <p>Total de Compras: 6</p>
+                            </div>
+                            <div className='customer dashboard'>
+                                <h4>Cliente 7</h4>
+                                <p>Email: cliente7@example.com</p>
+                                <p>Total de Compras: 4</p>
+                            </div>
+                        </ul>
+                    ) : (
+                        ''
+                    )}
                 </section>
             </main>
         </div>

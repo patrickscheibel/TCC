@@ -1,4 +1,4 @@
- h1.dashboard, h2.dashboard, h3.dashboard, ul.dashboard, li.dashboard, p.dashboard, table.dashboard {
+h1.dashboard, h2.dashboard, h3.dashboard, ul.dashboard, li.dashboard, p.dashboard, table.dashboard {
     margin: 0;
     padding: 0;
     font-family: Arial, Helvetica, sans-serif;
@@ -11,26 +11,8 @@
     padding: 1rem;
 }
 
-/* Teste */
-.header.dashboard.protanopia {
-    background-color: #f50303;
-    color: white;
-    text-align: center;
-    padding: 1rem;
-}
-
 .sidebar.dashboard {
     background-color: #053b68;
-    color: white;
-    width: 250px;
-    height: 100vh;
-    padding: 1rem;
-    position: absolute;
-}
-
-/* TESTE */
-.sidebar.dashboard.protanopia{
-    background-color: #f50303;
     color: white;
     width: 250px;
     height: 100vh;
@@ -121,13 +103,118 @@
 }
 
 /* 
- * DaltonismoProtaniopia 
+ * DaltonismoProtanopia 
  */
+
+.header.dashboard.protanopia {
+    background-color: #e60fc2;
+    color: white;
+    text-align: center;
+    padding: 1rem;
+}
+
+.sidebar.dashboard.protanopia{
+    background-color: #460342;
+    color: white;
+    width: 250px;
+    height: 100vh;
+    padding: 1rem;
+    position: absolute;
+}
+
+.sidebar.dashboard.protanopia a:hover {
+    background-color: #54405a;
+}
+
+.sidebar.dashboard.protanopia .active {
+    background-color: #53305c;
+}
 
 /* 
  * Daltonismo-Tritanopia 
  */
+
+.header.dashboard.tritanopia {
+    background-color: #77e60f;
+    color: white;
+    text-align: center;
+    padding: 1rem;
+}
+
+.sidebar.dashboard.tritanopia{
+    background-color: #035e08;
+    color: white;
+    width: 250px;
+    height: 100vh;
+    padding: 1rem;
+    position: absolute;
+}
+
+.sidebar.dashboard.tritanopia a:hover {
+    background-color: #7480c5;
+}
+
+.sidebar.dashboard.tritanopia .active {
+    background-color: #30375c;
+}
  
 /* 
  * Daltonismo-Deuteranopia 
  */
+
+.header.dashboard.deuteranopia {
+    background-color: #e61d0f;
+    color: white;
+    text-align: center;
+    padding: 1rem;
+}
+
+.sidebar.dashboard.deuteranopia{
+    background-color: #5e1803;
+    color: white;
+    width: 250px;
+    height: 100vh;
+    padding: 1rem;
+    position: absolute;
+}
+
+.sidebar.dashboard.deuteranopia a:hover {
+    background-color: #59c48e;
+}
+
+.sidebar.dashboard.deuteranopia .active {
+    background-color: #50292c;
+}
+
+/* 
+ * Idade Valida 
+ */
+.image.false {
+    max-width: 150px;
+    height: auto;
+}
+
+
+/* 
+ * miopia_baixa 
+ */
+
+.dashboard.miopia_baixa p {
+    font-size: 18px;
+}
+
+/* 
+ * miopia_moderada 
+ */
+
+.dashboard.miopia_moderada p {
+    font-size: 20px;
+}
+
+/* 
+ * miopia_alta 
+ */
+
+ .dashboard.miopia_alta p {
+    font-size: 22px;
+}
