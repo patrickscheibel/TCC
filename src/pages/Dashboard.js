@@ -90,12 +90,12 @@ const Dashboard = (props) => {
                             <p>Total de Compras: 8</p>
                         </div>
                         <div className='customer dashboard'>
-                            <h4>Cliente 2</h4>
+                            <h4>Cliente 3</h4>
                             <p>Email: cliente2@example.com</p>
                             <p>Total de Compras: 8</p>
                         </div>
                         <div className='customer dashboard'>
-                            <h4>Cliente 2</h4>
+                            <h4>Cliente 4</h4>
                             <p>Email: cliente2@example.com</p>
                             <p>Total de Compras: 8</p>
                         </div>
@@ -104,12 +104,12 @@ const Dashboard = (props) => {
                     { isIdadeValida ? (
                         <ul className='customer-list dashboard'>
                             <div className='customer dashboard'>
-                                <h4>Cliente 6</h4>
+                                <h4>Cliente 5</h4>
                                 <p>Email: cliente6@example.com</p>
                                 <p>Total de Compras: 6</p>
                             </div>
                             <div className='customer dashboard'>
-                                <h4>Cliente 7</h4>
+                                <h4>Cliente 6</h4>
                                 <p>Email: cliente7@example.com</p>
                                 <p>Total de Compras: 4</p>
                             </div>
