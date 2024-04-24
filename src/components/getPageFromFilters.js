@@ -1,7 +1,7 @@
 import React from 'react'
-import Normal_Dashboard from '../pages/Dashboard.js'
-import Normal_Login from '../pages/Login.js'
-import Normal_Register from '../pages/Register.js'
+import Dashboard from '../pages/Dashboard.js'
+import Login from '../pages/Login.js'
+import Register from '../pages/Register.js'
 
 const getPageFromFilters = (filtroIdade, filtroProblemaVisao, filtroDaltonismo, filtroTelaExibida) => {
   let idade = getSelectedStyleForIdade(filtroIdade)
@@ -10,11 +10,11 @@ const getPageFromFilters = (filtroIdade, filtroProblemaVisao, filtroDaltonismo, 
   
   switch (filtroTelaExibida) {
     case 'dashboard':
-      return <Normal_Dashboard idade={`${idade}`} daltonismo={`${daltonismo}`} problemaVisao={`${problemaVisao}`} />
+      return <Dashboard idade={`${idade}`} daltonismo={`${daltonismo}`} problemaVisao={`${problemaVisao}`} />
     case 'login':
-      return <Normal_Login idade={`${idade}`} daltonismo={`${daltonismo}`} problemaVisao={`${problemaVisao}`} />
+      return <Login daltonismo={`${daltonismo}`} problemaVisao={`${problemaVisao}`} />
     case 'register':
-      return <Normal_Register idade={`${idade}`} daltonismo={`${daltonismo}`} problemaVisao={`${problemaVisao}`} />
+      return <Register daltonismo={`${daltonismo}`} problemaVisao={`${problemaVisao}`} />
     default:
       return <div>Página não encontrada.</div>
   }
@@ -23,8 +23,9 @@ const getPageFromFilters = (filtroIdade, filtroProblemaVisao, filtroDaltonismo, 
 function getSelectedStyleForIdade(filtroIdade) {
   switch (filtroIdade) {
     case 'idade_01_10':
+      return 'idade_01_10';
     case 'idade_10_20':
-      return 'idade_01_20';
+      return 'idade_10_20';
     case 'idade_20_30':
     case 'idade_30_40':
       return 'idade_20_40';
