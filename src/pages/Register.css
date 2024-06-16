@@ -71,7 +71,7 @@
  */
 
 .button-register.protanopia button[type="submit"] {
-  background-color: #72972d;
+  background-color: #f9e033;
   color: #ffffff;
   border: none;
   padding: 13px 22px;
@@ -82,11 +82,11 @@
 }
 
 .button-register.protanopia button[type="submit"]:hover {
-  background-color: #648528;
+  background-color: #f5db30;
 }
 
 .voltar-register.protanopia {
-  background-color: #4764e7;
+  background-color: #3b569c;
   color: #ffffff;
   border: none;
   padding: 13px 22px;
@@ -105,7 +105,7 @@
  */
 
 .button-register.tritanopia button[type="submit"] {
-  background-color: #5c9fa1;
+  background-color: #7bc9ed;
   color: #ffffff;
   border: none;
   padding: 13px 22px;
@@ -116,11 +116,11 @@
 }
 
 .button-register.tritanopia button[type="submit"]:hover {
-  background-color: #4e888a;
+  background-color: #89cceb;
 }
 
 .voltar-register.tritanopia {
-  background-color: #2a8550;
+  background-color: #03638f;
   color: #ffffff;
   border: none;
   padding: 13px 22px;
@@ -131,7 +131,7 @@
 }
 
 .voltar-register.tritanopia:hover {
-  background-color: #257546;
+  background-color: #0373a7;
 }
 
 /* 
@@ -139,7 +139,7 @@
  */
 
 .button-register.deuteranopia button[type="submit"] {
-  background-color: #72972d;
+  background-color: #d2bf47;
   color: #ffffff;
   border: none;
   padding: 13px 22px;
@@ -150,11 +150,11 @@
 }
 
 .button-register.deuteranopia button[type="submit"]:hover {
-  background-color: #648528;
+  background-color: #c4b240;
 }
 
 .voltar-register.deuteranopia {
-  background-color: #005cbe;
+  background-color: #3a5a9e;
   color: #ffffff;
   border: none;
   padding: 13px 22px;
@@ -165,7 +165,7 @@
 }
 
 .voltar-register.deuteranopia:hover {
-  background-color: #0154ad;
+  background-color: #3f64a0;
 }
 
 /* 
