@@ -5,14 +5,14 @@ h1.dashboard, h2.dashboard, h3.dashboard, ul.dashboard, li.dashboard, p.dashboar
 }
 
 .header.dashboard {
-    background-color: #060131;
+    background-color: #be1c1c;
     color: white;
     text-align: center;
     padding: 1rem;
 }
 
 .sidebar.dashboard {
-    background-color: #053b68;
+    background-color: #cc2424;
     color: white;
     width: 250px;
     height: 100vh;
@@ -38,11 +38,11 @@ h1.dashboard, h2.dashboard, h3.dashboard, ul.dashboard, li.dashboard, p.dashboar
 }
 
 .sidebar.dashboard a:hover {
-    background-color: #646f77;
+    background-color: #b31919;
 }
 
 .sidebar.dashboard .active {
-    background-color: #646f77;
+    background-color: #911111;
 }
 
 .main-content.dashboard {
@@ -107,14 +107,14 @@ h1.dashboard, h2.dashboard, h3.dashboard, ul.dashboard, li.dashboard, p.dashboar
  */
 
 .header.dashboard.protanopia {
-    background-color: #e60fc2;
+    background-color: #5a541d;
     color: white;
     text-align: center;
     padding: 1rem;
 }
 
 .sidebar.dashboard.protanopia{
-    background-color: #460342;
+    background-color: #716923;
     color: white;
     width: 250px;
     height: 100vh;
@@ -123,11 +123,11 @@ h1.dashboard, h2.dashboard, h3.dashboard, ul.dashboard, li.dashboard, p.dashboar
 }
 
 .sidebar.dashboard.protanopia a:hover {
-    background-color: #54405a;
+    background-color: #5e581c;
 }
 
 .sidebar.dashboard.protanopia .active {
-    background-color: #53305c;
+    background-color: #474315;
 }
 
 /* 
@@ -135,14 +135,14 @@ h1.dashboard, h2.dashboard, h3.dashboard, ul.dashboard, li.dashboard, p.dashboar
  */
 
 .header.dashboard.tritanopia {
-    background-color: #77e60f;
+    background-color: #cc1b4d;
     color: white;
     text-align: center;
     padding: 1rem;
 }
 
 .sidebar.dashboard.tritanopia{
-    background-color: #035e08;
+    background-color: #de1c53;
     color: white;
     width: 250px;
     height: 100vh;
@@ -151,11 +151,11 @@ h1.dashboard, h2.dashboard, h3.dashboard, ul.dashboard, li.dashboard, p.dashboar
 }
 
 .sidebar.dashboard.tritanopia a:hover {
-    background-color: #7480c5;
+    background-color: #b91b48;
 }
 
 .sidebar.dashboard.tritanopia .active {
-    background-color: #30375c;
+    background-color: #a81740;
 }
  
 /* 
@@ -163,14 +163,14 @@ h1.dashboard, h2.dashboard, h3.dashboard, ul.dashboard, li.dashboard, p.dashboar
  */
 
 .header.dashboard.deuteranopia {
-    background-color: #e61d0f;
+    background-color: #857513;
     color: white;
     text-align: center;
     padding: 1rem;
 }
 
 .sidebar.dashboard.deuteranopia{
-    background-color: #5e1803;
+    background-color: #a79416;
     color: white;
     width: 250px;
     height: 100vh;
@@ -179,11 +179,11 @@ h1.dashboard, h2.dashboard, h3.dashboard, ul.dashboard, li.dashboard, p.dashboar
 }
 
 .sidebar.dashboard.deuteranopia a:hover {
-    background-color: #59c48e;
+    background-color: #70630f;
 }
 
 .sidebar.dashboard.deuteranopia .active {
-    background-color: #50292c;
+    background-color: #61560e;
 }
 
 /* 
