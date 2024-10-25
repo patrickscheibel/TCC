@@ -172,22 +172,46 @@
  * miopia_baixa 
  */
 
-.register-miopia_baixa * {
-  font-size: 14px;
+ .register-miopia_baixa *:not(h1) {
+  font-size: 16px !important;
 }
 
 /* 
 * miopia_moderada 
 */
 
-.register-miopia_moderada * {
-  font-size: 16px;
+.register-miopia_moderada *:not(h1) {
+  font-size: 18px !important;
 }
 
 /* 
 * miopia_alta 
 */
 
-.register-miopia_alta * {
+.register-miopia_alta *:not(h1) {
+  font-size: 20px !important;
+}
+
+/* 
+ * idade_10_30 
+ */
+
+ .register-idade_10_30 *:not(h1) {
+  font-size: 16px;
+}
+
+/* 
+* idade_30_60 
+*/
+
+.register-idade_30_60 *:not(h1) {
   font-size: 18px;
+}
+
+/* 
+* idade_60_80 
+*/
+
+.register-idade_60_80 *:not(h1) {
+  font-size: 20px;
 }
