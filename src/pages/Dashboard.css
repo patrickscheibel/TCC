@@ -1,7 +1,8 @@
-h1.dashboard, h2.dashboard, h3.dashboard, ul.dashboard, li.dashboard, p.dashboard, table.dashboard {
+h1.dashboard, h2.dashboard, h3.dashboard, ul.dashboard, li.dashboard, p.dashboard, table.dashboard, a.dashboard {
     margin: 0;
     padding: 0;
     font-family: Arial, Helvetica, sans-serif;
+    font-size: 16px !important;
 }
 
 .header.dashboard {
@@ -192,29 +193,52 @@ h1.dashboard, h2.dashboard, h3.dashboard, ul.dashboard, li.dashboard, p.dashboar
 .image.false {
     max-width: 150px;
     height: auto;
-}
-
+} 
 
 /* 
  * miopia_baixa 
  */
 
-.dashboard.miopia_baixa p {
-    font-size: 18px;
+.dashboard.miopia_baixa *:not(h1) {
+    font-size: 16px !important;
 }
 
 /* 
  * miopia_moderada 
  */
 
-.dashboard.miopia_moderada p {
-    font-size: 20px;
+.dashboard.miopia_moderada *:not(h1) {
+    font-size: 18px !important;
 }
 
 /* 
  * miopia_alta 
  */
 
- .dashboard.miopia_alta p {
-    font-size: 22px;
+ .dashboard.miopia_alta *:not(h1) {
+    font-size: 20px !important;
+}
+
+/* 
+ * idade_10_30 
+ */
+
+ .dashboard.idade_10_30 *:not(h1) {
+    font-size: 16px;
+}
+
+/* 
+ * idade_30_60 
+ */
+
+ .dashboard.idade_30_60 *:not(h1) {
+    font-size: 18px;
+}
+
+/* 
+ * idade_60_80 
+ */
+
+ .dashboard.idade_60_80 *:not(h1) {
+    font-size: 20px;
 }
