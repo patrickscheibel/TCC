@@ -12,9 +12,9 @@ const getPageFromFilters = (filtroIdade, filtroProblemaVisao, filtroDaltonismo, 
     case 'dashboard':
       return <Dashboard idade={`${idade}`} daltonismo={`${daltonismo}`} problemaVisao={`${problemaVisao}`} />
     case 'login':
-      return <Login daltonismo={`${daltonismo}`} problemaVisao={`${problemaVisao}`} />
+      return <Login idade={`${idade}`} daltonismo={`${daltonismo}`} problemaVisao={`${problemaVisao}`} />
     case 'register':
-      return <Register daltonismo={`${daltonismo}`} problemaVisao={`${problemaVisao}`} />
+      return <Register idade={`${idade}`} daltonismo={`${daltonismo}`} problemaVisao={`${problemaVisao}`} />
     default:
       return <div>Página não encontrada.</div>
   }
@@ -23,15 +23,13 @@ const getPageFromFilters = (filtroIdade, filtroProblemaVisao, filtroDaltonismo, 
 function getSelectedStyleForIdade(filtroIdade) {
   switch (filtroIdade) {
     case 'idade_01_10':
-      return 'idade_01_10';
     case 'idade_10_20':
-      return 'idade_10_20';
     case 'idade_20_30':
+      return 'idade_10_30';
     case 'idade_30_40':
-      return 'idade_20_40';
     case 'idade_40_50':
     case 'idade_50_60':
-      return 'idade_40_60';
+      return 'idade_30_60';
     case 'idade_60_70':
     case 'idade_70_80':
       return 'idade_60_80';
