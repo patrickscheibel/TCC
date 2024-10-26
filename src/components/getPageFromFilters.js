@@ -4,20 +4,38 @@ import Login from '../pages/Login.js'
 import Register from '../pages/Register.js'
 
 const getPageFromFilters = (filtroIdade, filtroProblemaVisao, filtroDaltonismo, filtroTelaExibida) => {
-  let idade = getSelectedStyleForIdade(filtroIdade)
-  let daltonismo = getSelectedStyleForDaltonismo(filtroDaltonismo)
-  let problemaVisao = getSelectedStyleForProblemaVisao(filtroProblemaVisao)
-  
+  const idade = getSelectedStyleForIdade(filtroIdade)
+  const miopia = getSelectedStyleForMiopia(filtroProblemaVisao)
+  const tamanhoTexto = getTamanhoTexto(idade, miopia)
+  const daltonismo = getSelectedStyleForDaltonismo(filtroDaltonismo)
+
   switch (filtroTelaExibida) {
     case 'dashboard':
-      return <Dashboard idade={`${idade}`} daltonismo={`${daltonismo}`} problemaVisao={`${problemaVisao}`} />
+      return <Dashboard idade={`${idade}`} tamanhoTexto={`${tamanhoTexto}`} daltonismo={`${daltonismo}`} />
     case 'login':
-      return <Login idade={`${idade}`} daltonismo={`${daltonismo}`} problemaVisao={`${problemaVisao}`} />
+      return <Login idade={`${idade}`} tamanhoTexto={`${tamanhoTexto}`} daltonismo={`${daltonismo}`} />
     case 'register':
-      return <Register idade={`${idade}`} daltonismo={`${daltonismo}`} problemaVisao={`${problemaVisao}`} />
+      return <Register idade={`${idade}`} tamanhoTexto={`${tamanhoTexto}`} daltonismo={`${daltonismo}`} />
     default:
       return <div>Página não encontrada.</div>
   }
+}
+
+function getTamanhoTexto(filtroIdade, filtroMiopia) {
+  let tamanho = 'texto-normal' 
+  if (filtroIdade == 'idade_10_30' || filtroMiopia == 'miopia_baixa') {
+    tamanho = 'texto-normal'
+  }
+
+  if (filtroIdade == 'idade_30_60' || filtroMiopia == 'miopia_moderada') {
+    tamanho = 'texto-medio'
+  }
+
+  if (filtroIdade == 'idade_60_80' || filtroMiopia == 'miopia_alta') {
+    tamanho = 'texto-grande'
+  }
+
+  return tamanho
 }
 
 function getSelectedStyleForIdade(filtroIdade) {
@@ -51,8 +69,8 @@ function getSelectedStyleForDaltonismo(filtroDaltonismo) {
   }
 }
 
-function getSelectedStyleForProblemaVisao(filtroProblemaVisao) {
-  switch (filtroProblemaVisao) {
+function getSelectedStyleForMiopia(filtroMiopia) {
+  switch (filtroMiopia) {
     case 'miopia_baixa':
       return 'miopia_baixa';
     case 'miopia_moderada':
