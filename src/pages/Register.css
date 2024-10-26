@@ -169,49 +169,25 @@
 }
 
 /* 
- * miopia_baixa 
+ * texto-normal 
  */
 
- .register-miopia_baixa *:not(h1) {
-  font-size: 16px !important;
-}
-
-/* 
-* miopia_moderada 
-*/
-
-.register-miopia_moderada *:not(h1) {
-  font-size: 18px !important;
-}
-
-/* 
-* miopia_alta 
-*/
-
-.register-miopia_alta *:not(h1) {
-  font-size: 20px !important;
-}
-
-/* 
- * idade_10_30 
- */
-
- .register-idade_10_30 *:not(h1) {
+ .register-texto-normal *:not(h1) {
   font-size: 16px;
 }
 
 /* 
-* idade_30_60 
+* texto-medio
 */
 
-.register-idade_30_60 *:not(h1) {
+.register-texto-medio *:not(h1) {
   font-size: 18px;
 }
 
 /* 
-* idade_60_80 
+* texto-grande 
 */
 
-.register-idade_60_80 *:not(h1) {
+.register-texto-grande *:not(h1) {
   font-size: 20px;
 }
