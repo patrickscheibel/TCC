@@ -196,49 +196,25 @@ h1.dashboard, h2.dashboard, h3.dashboard, ul.dashboard, li.dashboard, p.dashboar
 } 
 
 /* 
- * miopia_baixa 
+ * texto-normal 
  */
 
-.dashboard.miopia_baixa *:not(h1) {
-    font-size: 16px !important;
-}
-
-/* 
- * miopia_moderada 
- */
-
-.dashboard.miopia_moderada *:not(h1) {
-    font-size: 18px !important;
-}
-
-/* 
- * miopia_alta 
- */
-
- .dashboard.miopia_alta *:not(h1) {
-    font-size: 20px !important;
-}
-
-/* 
- * idade_10_30 
- */
-
- .dashboard.idade_10_30 *:not(h1) {
+ .dashboard-texto-normal *:not(h1) {
     font-size: 16px;
 }
 
 /* 
- * idade_30_60 
+ * texto-medio
  */
 
- .dashboard.idade_30_60 *:not(h1) {
+ .dashboard-texto-medio *:not(h1) {
     font-size: 18px;
 }
 
 /* 
- * idade_60_80 
+ * texto-grande 
  */
 
- .dashboard.idade_60_80 *:not(h1) {
+ .dashboard-texto-grande *:not(h1) {
     font-size: 20px;
 }
